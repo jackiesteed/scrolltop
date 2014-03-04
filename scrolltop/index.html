@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Scroll top demo</title>
+		
+		<style type="text/css">
+			body{height:3000px;background-color:#EAEAEA;}
+			
+		</style>
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="./jquery.scrolltop.js" type="text/javascript" defer> </script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#scrollTop").scrolltop({
+					right: "7%",
+					bottom: "30px",
+					heightThreshold: 600,
+					topSpeed: 300,
+					bkImg: "./top.png"
+				});
+			});
+		</script>
+	</head>
+	<body >
+	<center>
+		<h1>Scroll Top Demo</h1>
+		<div style="background: url(./blog.jpg) no-repeat;height:640px;width:640px;"></div>
+	</center>
+	<div id="scrollTop"/> 
+	</body>
+</html>
